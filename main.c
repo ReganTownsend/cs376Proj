@@ -9,7 +9,8 @@
  *
  */
 #include "robot.h"
-
+#include "cothran16.h"
+#include "townsenr17.h"
 /**
  * main()
  *
@@ -33,6 +34,7 @@ int main(int argc, const char * argv[])
   robPrintAscii();
 
   robPrintMessage(num);
-
+  cothran16();
+  townsenr17();
   return 0;
 }
