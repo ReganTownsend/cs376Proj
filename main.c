@@ -9,8 +9,10 @@
  *
  */
 #include "robot.h"
+
 #include "cothran16.h"
 #include "townsenr17.h"
+
 /**
  * main()
  *
@@ -27,7 +29,7 @@ int main(int argc, const char * argv[])
     printf("usage: %s <number> \n", argv[0]);
     return -1;
   }
-
+  
   // Convert the command-line argument to a number.
   int num = atoi(argv[1]);
 
@@ -36,5 +38,6 @@ int main(int argc, const char * argv[])
   robPrintMessage(num);
   cothran16();
   townsenr17();
+
   return 0;
 }
